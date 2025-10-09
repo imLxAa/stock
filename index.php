@@ -17,7 +17,7 @@
     <?php
         include("partials/nav.php");
     ?>
-    <!-- cintenue du site -->
+    <!-- contenue du site -->
 
     <?php
         $req = $bdd->query("SELECT * FROM products ORDER BY date DESC LIMIT 2");

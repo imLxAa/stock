@@ -24,7 +24,7 @@
         while($don = $req->fetch())
         {
                 //echo "<div>".$don['name']."</div>";
-            echo "</div>";
+            echo "<div>";
             echo "<a href='product.php?id=".$don['id']."'>".$don['name']."</a>";
                 //echo"<a href="product.php?id=='></a>";
                 //echo "< href='product.php?id=".."'>".."</a>";

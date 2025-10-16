@@ -48,8 +48,18 @@
 
         if($err == 0)
         {
-            
-        //insertion dans la base de données
+
+        //insertion dans la base de donnéesr
+        require "../config/connexion.php";
+        $insert = $bdd->prepare("INSERT INTO products(name,date,category,description,cover) VALUES(:nom,:date,:category,:description,:cover)");
+    $insert->execute([
+        "nom" => $nom,
+        "date" => $date,
+        "category" => $category,
+        "description" => $description,
+        "cover" => $cover
+    ]);
+
         }else{
             header("LOCATION:addProduct.php?error=".$err);
             exit();

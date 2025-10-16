@@ -31,6 +31,10 @@
             {
                 echo "<div class='alert alert-success'>Vous avez bien ajouté une nouvelle catégorie à la base de données</div>";
             }
+            if(isset($_GET['update']) && $_GET['add']=="update")
+            {
+                echo "<div class='alert alert-warning'>Vous avez bien modifié une catégorie de la base de données</div>";
+            }   
         ?>
         <table class="table table-striped">
 
